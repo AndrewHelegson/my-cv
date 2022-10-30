@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import { useRef } from "react";
+import Main from "./components/Main";
+import Navbar from "./components/Navbar";
+
 
 function App() {
+  /*   const myRef1 = useRef(null)
+    const myRef2 = useRef(null)
+    const myRef3 = useRef(null) */
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Navbar /* myRef1={myRef1} myRef2={myRef2} myRef3={myRef3} */ />
+      <Main /* myRef1={myRef1} myRef2={myRef2} myRef3={myRef3} */ />
+    </Box>
+
   );
 }
 
